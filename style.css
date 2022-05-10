@@ -20,7 +20,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #nav {
@@ -217,7 +217,7 @@ button:hover {
 
 .faq {
   margin: auto;
-  width: 80%;
+  width: 50%;
   border-radius: 2px;
   margin-top: 5%;
   background-color: white;
@@ -400,10 +400,6 @@ sub {
   max-width: 100%;
 }
 
-#contact-us p {
-  line-height: 1;
-}
-
 .form {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
@@ -470,15 +466,31 @@ textarea {
   }
 }
 
-@media (min-width: 576px) and (max-width: 1023px) {
+@media (min-width: 240px) and (max-width: 1024px) {
   .card {
     width: 80%;
+  }
+  #contact-us .card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #contact-us .form {
+    width: 70%;
+    margin-top: 5%;
   }
 }
 
 @media screen and (min-width: 768px) {
   #about-us img {
     padding: 5% 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #testimonials .card {
+    width: 70%;
   }
 }
 
@@ -494,7 +506,7 @@ textarea {
   }
 }
 
-/* SIGN IN PAGE */
+/* SIGN IN-UP PAGE */
 
 #header-sign {
   padding: 5% 0 10%;
